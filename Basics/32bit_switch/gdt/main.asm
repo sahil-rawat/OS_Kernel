@@ -6,7 +6,7 @@
     call print ; This will be written after the BIOS messages
 
     call switch_to_pm
-    jmp $ ; this will actually never be executed
+    jmp $
 
 %include "../../boot_sector/print_functions/print.asm"
 %include "./gdt.asm"
